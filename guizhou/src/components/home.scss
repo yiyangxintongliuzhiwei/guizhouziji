@@ -4,48 +4,56 @@
     list-style: none;
     text-align: center;
 }
-.swiper-container{
+.box{
     width: 1170px;
     height: 465px;
-    // background: yellow;
+    background: yellow;
     position: absolute;
-    left: 0;
+    left:164px;
     top:90px;
-    box-shadow:1px 0 10px black;
-      .swiper-container-slide{
+    box-shadow:1px 0 10px black;  
+    overflow:hidden;
+    #imgdata{
+        width: 3510px;
+        height: 465px;
+        background: violet;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .imgdata1{
             width: 1170px;
             height: 465px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            // background: navajowhite; 
-            .swiper-slide1{
-                width: 1170px;
-                height: 465px;
-                position: absolute;
-                left: 0;
-                top: 0;
-                background-size: 100% 100%;
-                background-image: url('../assets/img/home/banner1.jpg');
-            }
-            .swiper-slide2{
-                width: 1170px;
-                height: 465px;
-                position: absolute;
-                left: 0;
-                top: 0;
-                // background-size: 100% 100%;
-                // background-image: url('../assets/img/home/banner2.jpg');
-            }
-            .swiper-slide3{
-                width: 1170px;
-                height: 465px;
-                position: absolute;
-                left: 0;
-                top: 0;
-                // background-size: 100% 100%;
-                // background-image: url('../assets/img/home/banner3.jpg');
-            }
+            float: left; 
+            background-size: 100% 100%;
+            background-image: url('../assets/img/home/banner1.jpg');
         }
-    
+        .imgdata2{
+            width: 1170px;
+            height: 465px;
+            float: left;
+            background-size: 100% 100%;
+            background-image: url('../assets/img/home/banner2.jpg'); 
+        }      
+    }
+    .pre{
+        width: 30px;
+        height: 60px;
+        background: tan;
+        position: absolute;
+        left: 0;
+        top:50%;
+        margin-top: -30px;
+    }
+    .active1{
+        transform:translateX(-1170px);
+    }
+    .next{
+        width: 30px;
+        height: 60px;
+        background: tan;
+        position: absolute;
+        right: 0;
+        top:50%;
+        margin-top: -30px;
+    }
 }

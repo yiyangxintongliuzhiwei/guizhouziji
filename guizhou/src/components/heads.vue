@@ -18,6 +18,13 @@ export default {
           isactive:-1,
       }
   },
+  mounted(){
+      this.$axios.get("/api/listdata.php").then(
+          (res)=>{
+             console.log(res)
+          }
+      )
+  },
   methods:{ 
         changealive:function(index){
             this.isactive = index;

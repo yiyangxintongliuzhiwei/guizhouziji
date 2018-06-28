@@ -7,7 +7,8 @@ import example from '@/components/example'
 import play from '@/components/play'
 import message from '@/components/message'
 import contact from '@/components/contact'
-
+import login from '@/components/login.vue'
+import manager from '@/components/manager.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -40,5 +41,13 @@ export default new Router({
       path: '/contact',
       component: contact
     },
+    {
+      path: '/login',
+      component: login
+    },
+    {
+      path:'/manager',
+      component:manager
+    }
   ]
 })
