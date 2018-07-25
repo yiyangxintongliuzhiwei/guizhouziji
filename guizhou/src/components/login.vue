@@ -3,7 +3,7 @@
 <el-container class="el-container">
   <el-header class="header">后台管理系统</el-header>
   <el-main class="main">
-    <el-form ref="form" :model="form" class="form">
+    <el-form ref="form" class="form">
         <div class="top">
         <span>账号</span>
         <input type="text" v-model="name">

@@ -9,9 +9,11 @@ import message from '@/components/message'
 import contact from '@/components/contact'
 import login from '@/components/login.vue'
 import manager from '@/components/manager.vue'
+import store from '@/components/store/store.js'
 Vue.use(Router)
 
-export default new Router({
+ 
+ let router = new Router({
   routes: [
     {
       path: '/',
@@ -23,7 +25,7 @@ export default new Router({
     },
     {
       path: '/work',
-      component: work
+      component: work,
     },
     {
       path: '/example',
@@ -35,7 +37,7 @@ export default new Router({
     },
     {
       path: '/message',
-      component: message
+      component: message,
     },
     {
       path: '/contact',
@@ -51,3 +53,5 @@ export default new Router({
     }
   ]
 })
+export default router
+
